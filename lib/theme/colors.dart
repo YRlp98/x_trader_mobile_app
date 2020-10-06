@@ -13,6 +13,9 @@ Color redColor = const Color(0xffF14147);
 Color yellowColor = const Color(0xffEBAD06);
 
 final appTheme = ThemeData(
-  primaryColor: darkBackgroundColor,
+  brightness: Brightness.dark,
+  primaryColor: Colors.blue,
   primarySwatch: Colors.blue,
+  visualDensity: VisualDensity.adaptivePlatformDensity,
+  scaffoldBackgroundColor: darkBackgroundColor,
 );
