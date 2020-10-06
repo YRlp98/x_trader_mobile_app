@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:x_trader/theme/colors.dart';
+
+import '../theme/colors.dart';
 
 class AppbarIcon extends StatelessWidget {
   final String icon;

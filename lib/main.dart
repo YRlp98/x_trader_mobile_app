@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:x_trader/pages/dashboard_page.dart';
-import 'package:x_trader/theme/colors.dart';
+
+import 'home.dart';
+import 'theme/colors.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'X Trader',
       theme: appTheme,
       debugShowCheckedModeBanner: false,
-      home: DashboardPage(),
+      home: Home(),
     );
   }
 }

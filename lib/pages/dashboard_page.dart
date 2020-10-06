@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:x_trader/theme/icons.dart';
-import 'package:x_trader/widgets/avatars.dart';
-import 'package:x_trader/widgets/icons.dart';
+
+import '../theme/icons.dart';
+import '../widgets/avatars.dart';
+import '../widgets/icons.dart';
 
 class DashboardPage extends StatefulWidget {
   DashboardPage({Key key}) : super(key: key);
