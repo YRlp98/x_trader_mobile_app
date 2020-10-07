@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../theme/colors.dart';
 
+//* Appbar Icon
 class AppbarIcon extends StatelessWidget {
   final String icon;
 
@@ -34,6 +35,33 @@ class AppbarIcon extends StatelessWidget {
       ),
       onTap: () {
         print('Appbar Icon');
+      },
+    );
+  }
+}
+
+//* Games Icon
+class GamesIcon extends StatelessWidget {
+  final String gameIcon;
+
+  const GamesIcon({
+    Key key,
+    @required this.gameIcon,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 7),
+        width: 55,
+        height: 55,
+        child: Image.asset(
+          gameIcon,
+        ),
+      ),
+      onTap: () {
+        print('Games Icon');
       },
     );
   }

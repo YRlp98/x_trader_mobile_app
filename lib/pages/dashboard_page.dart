@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:x_trader/widgets/games_bar.dart';
 
 import '../theme/icons.dart';
 import '../widgets/avatars.dart';
@@ -30,16 +31,16 @@ class _DashboardPageState extends State<DashboardPage> {
               AppbarIcon(icon: typeIcon),
               AppbarIcon(icon: sortIcon),
               AppbarIcon(icon: searchIcon),
-              SizedBox(width: 10),
+              SizedBox(width: 15),
             ],
           )
         ],
       ),
       //* Body
-      body: Center(
-        child: Image.asset(
-          'assets/images/avatar_1.png',
-        ),
+      body: Column(
+        children: [
+          GamesBar(),
+        ],
       ),
     );
   }
