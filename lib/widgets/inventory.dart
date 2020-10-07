@@ -40,38 +40,43 @@ class InventoryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.only(
-        top: 10,
-        right: 8,
-        left: 8,
-        bottom: 8,
+    return GestureDetector(
+      child: Container(
+        padding: const EdgeInsets.only(
+          top: 10,
+          right: 8,
+          left: 8,
+          bottom: 8,
+        ),
+        decoration: BoxDecoration(
+          color: navyBlueColor,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            itemName(name: 'Genuine Ice Baby Roshan Immortal CocccccXXXX 5555'),
+            itemImage(image: 'assets/images/inventory.png'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                itemType(type: 'rare'),
+                SizedBox(width: 10),
+                itemCatPlatform(platformIcon: 'assets/images/steam.png'),
+                SizedBox(width: 5),
+                itemCatGame(gameIcon: 'assets/images/cs_go.png'),
+              ],
+            ),
+            SizedBox(height: 8),
+            itemPrice(price: r'$254.22'),
+          ],
+        ),
       ),
-      decoration: BoxDecoration(
-        color: navyBlueColor,
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          itemName(name: 'Genuine Ice Baby Roshan Immortal CocccccXXXX 5555'),
-          itemImage(image: 'assets/images/inventory.png'),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              itemType(type: 'rare'),
-              SizedBox(width: 10),
-              itemCatPlatform(platformIcon: 'assets/images/steam.png'),
-              SizedBox(width: 5),
-              itemCatGame(gameIcon: 'assets/images/cs_go.png'),
-            ],
-          ),
-          SizedBox(height: 8),
-          itemPrice(price: r'$254.22'),
-        ],
-      ),
+      onTap: () {
+        print('Inventory Tap');
+      },
     );
   }
 

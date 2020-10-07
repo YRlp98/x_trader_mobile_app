@@ -66,3 +66,24 @@ class GamesIcon extends StatelessWidget {
     );
   }
 }
+
+//* FAB Icon
+class FABIcon extends StatelessWidget {
+  final String icon;
+
+  const FABIcon({
+    Key key,
+    @required this.icon,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(13),
+      child: SvgPicture.asset(
+        icon,
+        color: whiteColor,
+      ),
+    );
+  }
+}

@@ -9,3 +9,6 @@ const tradesIcon = 'assets/icons/trades.svg';
 const chatIcon = 'assets/icons/chat.svg';
 const notificationsIcon = 'assets/icons/notifications.svg';
 const settingsIcon = 'assets/icons/settings.svg';
+
+//* FloatingActionButton
+const addIcon = 'assets/icons/add.svg';
