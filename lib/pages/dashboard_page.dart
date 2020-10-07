@@ -15,7 +15,7 @@ class _DashboardPageState extends State<DashboardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //! Appbar
+      //* Appbar
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -35,7 +35,7 @@ class _DashboardPageState extends State<DashboardPage> {
           )
         ],
       ),
-      //! Body
+      //* Body
       body: Center(
         child: Image.asset(
           'assets/images/avatar_1.png',

@@ -2,6 +2,7 @@ import 'package:bubbled_navigation_bar/bubbled_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:x_trader/theme/text_styles.dart';
 
 import 'pages/dashboard_page.dart';
 import 'theme/colors.dart';
@@ -105,10 +106,7 @@ class _HomeState extends State<Home> {
             bubbleColor: Colors.transparent,
             title: Text(
               title,
-              style: TextStyle(
-                color: whiteColor,
-                fontSize: 12,
-              ),
+              style: bottomNavigationbarText,
             ),
           );
         }).toList(),

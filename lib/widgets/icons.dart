@@ -13,7 +13,7 @@ class AppbarIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return GestureDetector(
       child: Container(
         margin: const EdgeInsets.only(left: 10),
         width: 33,
@@ -32,8 +32,8 @@ class AppbarIcon extends StatelessWidget {
           ),
         ),
       ),
-      onTapCancel: () {
-        print('ICON');
+      onTap: () {
+        print('Appbar Icon');
       },
     );
   }
