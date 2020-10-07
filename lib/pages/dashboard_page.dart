@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:x_trader/widgets/games_bar.dart';
+import 'package:x_trader/widgets/inventory.dart';
 
 import '../theme/icons.dart';
 import '../widgets/avatars.dart';
+import '../widgets/games_bar.dart';
 import '../widgets/icons.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -40,6 +41,7 @@ class _DashboardPageState extends State<DashboardPage> {
       body: Column(
         children: [
           GamesBar(),
+          Inventory(),
         ],
       ),
     );
